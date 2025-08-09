@@ -22,6 +22,7 @@ export class TypesenseClient {
     const autoSchema: schema = {
       name: collectionName,
       fields: [{ name: ".*", type: "auto" }],
+      enable_nested_fields: true
     };
     await this.client.collections().create(autoSchema);
   }

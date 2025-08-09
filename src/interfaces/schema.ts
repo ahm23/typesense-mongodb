@@ -2,6 +2,7 @@ export interface schema {
   name: string;
   fields: field[];
   default_sorting_field?: string;
+  enable_nested_fields: boolean;
 }
 
 interface field {

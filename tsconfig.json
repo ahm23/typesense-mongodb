@@ -3,9 +3,11 @@
     "module": "commonjs",
     "rootDir": "./src",
     "esModuleInterop": true,
-    "target": "es6",
+    "target": "esnext",
+    "lib": ["ESNext", "DOM"],
     "moduleResolution": "node",
     "sourceMap": true,
+    "skipLibCheck": true,
     "outDir": "./lib",
     "noImplicitAny": false,
     "resolveJsonModule": true,
@@ -13,6 +15,5 @@
   "include": [
     "src/**/*",
   ],
-  "exclude": ["tests"],
-  "lib": ["es2015"],
+  "exclude": ["tests"]
 }
